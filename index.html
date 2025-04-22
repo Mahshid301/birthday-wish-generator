@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Birthday Wish Generator</title>
   </head>
   <div class="container">
@@ -18,7 +19,7 @@
       <h1>Birthday Wish Generator</h1>
     </header>
     <main>
-      <form>
+      <form id="wish-generator-form">
         <input
           type="text"
           placeholder="Enter the words to be included in a wish"
@@ -29,9 +30,7 @@
         />
         <input type="submit" class="submit-button" />
       </form>
-      <div class="wish">
-        Happy Birthday! May your day be filled with so much joy that even your
-        cake gets a little jealous of how sweet life is treating you!
+      <div class="wish" id="wish">
       </div>
       <img src="src/crayon-strawberry-cake.png" alt="birthday-cake" class="cake-pic"/>
     </main>
