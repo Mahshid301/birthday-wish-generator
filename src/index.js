@@ -16,6 +16,9 @@ function generateWish(event) {
   let context = "please generate a lovely birthday wish no longer than 3 lines";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let wishElement = document.querySelector("#wish");
+  wishElement.classList.remove("hidden");
+  wishElement.innerHTML = `<div class="generating">🧚 Genereating a birthday wish</div>`;
   axios.get(apiUrl).then(displayWish);
 }
 
